@@ -1,21 +1,14 @@
+# robots.txt for Supplementopedia
+
 User-agent: *
 Allow: /
 
-# Allow all search engines to crawl the site
-Allow: /ingredients/
-Allow: /brands/
-Allow: /categories/
-Allow: /systems/
-Allow: /research/
+# Blog content
+Allow: /articles/
+Allow: /articles/tag/
 
+# Block non-content paths
+Disallow: /.git/
 
-# Block admin or sensitive areas if they exist
-Disallow: /admin/
-Disallow: /private/
-Disallow: /pins/
-
-# Sitemap location
+# Sitemap
 Sitemap: https://supplementopedia.com/sitemap.xml
-
-# Crawl delay (optional - be respectful)
-Crawl-delay: 1

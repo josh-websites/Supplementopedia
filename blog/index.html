@@ -4,33 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Privacy Policy – Supplementopedia</title>
+  <title>Supplementopedia Blog – Supplementopedia</title>
   
 
-  <meta name="description" content="Supplementopedia privacy policy.">
+  <meta name="description" content="Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.">
   <meta name="author" content="Supplementopedia">
 
   <link rel="icon" href="/images/site/favicon.png" type="image/png">
 
   
-  <link rel="canonical" href="https://supplementopedia.com/privacy/" />
+  <link rel="canonical" href="https://supplementopedia.com/blog/" />
   
 
-  <meta property="og:title" content="Privacy Policy">
-  <meta property="og:description" content="Supplementopedia privacy policy.">
+  <meta property="og:title" content="Supplementopedia Blog">
+  <meta property="og:description" content="Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.">
   
   <meta property="og:type" content="website">
   
-  <meta property="og:image" content="/images/menu.png">
+  <meta property="og:image" content="/images/blog/default.webp">
 
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Privacy Policy",
-  "description": "Supplementopedia privacy policy.",
-  "url": "https://supplementopedia.com/privacy/",
-  "image": "https://supplementopedia.com/images/menu.png"
+  "@type": "Blog",
+  "name": "Supplementopedia Blog",
+  "description": "Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.",
+  "url": "https://supplementopedia.com/blog/"
 }
   </script>
 
@@ -68,14 +67,14 @@
     </button>
     <nav id="menu" class="hidden md:flex space-x-6 text-base">
       <a href="/" class="hover:underline">Home</a>
-      <a href="/blog/" class="hover:underline">Blog</a>
+      <span class="font-semibold text-black">Blog</span>
       <a href="/about/" class="hover:underline">About</a>
 
     </nav>
   </div>
   <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-center">
   <a href="/" class="block hover:underline">Home</a>
-  <a href="/blog/" class="block hover:underline">Blog</a>
+  <span class="block font-semibold text-black">Blog</span>
   <a href="/about/" class="block hover:underline">About</a>
 
 </div>
@@ -85,29 +84,86 @@
   <a href="/disclaimer/" class="text-xs text-amber-700 no-underline hover:underline">Medical Disclaimer</a>
 </div>
 
-    <main class="max-w-3xl mx-auto px-4 py-10">
-      <h1 class="text-2xl font-bold text-black mb-6 border-b border-gray-300 pb-2">Privacy Policy</h1>
+    <div class="text-center py-3 px-4 mb-5">
+  <h1 class="text-2xl md:text-3xl font-bold m-0">Supplementopedia Blog</h1>
+  <p class="text-gray-600 mt-1">Evidence-based supplement guides, ingredient deep dives, and answers to real questions.</p>
+</div>
 
-      <div class="prose-sp">
-        <p class='text-base text-gray-700'>Supplementopedia respects your privacy. This site does not collect personal information beyond standard web server logs.</p>
-<h2 id='analytics' class='text-2xl font-semibold mt-8'>Analytics</h2>
-<p class='text-base text-gray-700'>This site may use privacy-respecting analytics to understand traffic patterns. No personally identifiable information is collected or shared.</p>
-<h2 id='cookies' class='text-2xl font-semibold mt-8'>Cookies</h2>
-<p class='text-base text-gray-700'>This site does not use tracking cookies. Third-party services embedded on this site (if any) may set their own cookies per their respective policies.</p>
-<h2 id='affiliate-links' class='text-2xl font-semibold mt-8'>Affiliate Links</h2>
-<p class='text-base text-gray-700'>This site displays banner advertisements from affiliate partners. For full details, see our <a href="/disclosure/" class="text-blue-600 underline hover:text-blue-800 transition">Affiliate Disclosure</a>.</p>
-<h2 id='contact' class='text-2xl font-semibold mt-8'>Contact</h2>
-<p class='text-base text-gray-700'>For privacy-related questions, reach out through the site's public channels.</p>
-      </div>
-    </main>
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
 
-    <div class="border-t border-gray-200 py-6 px-4">
-      <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide text-center mb-3">Affiliate Partners</p>
-      <div class="flex gap-4 max-w-md mx-auto">
-        <a href="https://www.anrdoezrs.net/click-101518089-15733504" target="_blank" rel="noopener sponsored" class="flex-1 border border-gray-200 hover:border-gray-400 transition py-3 px-4 no-underline flex items-center justify-center"><img src="/images/site/herbspro-logo.webp" alt="Herbs Pro" class="h-10" /></a><img src="https://www.tqlkg.com/image-101518089-15733504" width="1" height="1" border="0"/>
-        <a href="https://www.anrdoezrs.net/click-101518089-15735109" target="_blank" rel="noopener sponsored" class="flex-1 border border-gray-200 hover:border-gray-400 transition py-3 px-4 no-underline flex items-center justify-center"><img src="/images/site/healthlabs-logo.webp" alt="HealthLabs.com" class="h-10" /></a><img src="https://www.tqlkg.com/image-101518089-15735109" width="1" height="1" border="0"/>
-      </div>
-    </div>
+</div>
+
+<script>
+(function() {
+  var genrePanel = document.getElementById('genre-panel');
+  var tagPanel = document.getElementById('tag-panel');
+  var tabGenres = document.getElementById('tab-genres');
+  var tabTags = document.getElementById('tab-tags');
+
+  function closeAll() {
+    if (genrePanel) genrePanel.style.display = 'none';
+    if (tagPanel) tagPanel.style.display = 'none';
+    if (tabGenres) tabGenres.style.fontWeight = 'normal';
+    if (tabTags) tabTags.style.fontWeight = 'normal';
+  }
+
+  if (tabGenres) {
+    tabGenres.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (genrePanel.style.display !== 'none') { closeAll(); return; }
+      closeAll();
+      genrePanel.style.display = 'flex';
+      tabGenres.style.fontWeight = 'bold';
+    });
+  }
+
+  if (tabTags) {
+    tabTags.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (tagPanel.style.display !== 'none') { closeAll(); return; }
+      closeAll();
+      tagPanel.style.display = 'flex';
+      tabTags.style.fontWeight = 'bold';
+    });
+  }
+
+  document.querySelectorAll('[id$="-seeall"]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var moreId = this.id.replace('-seeall', '-more');
+      var more = document.getElementById(moreId);
+      if (more.style.display === 'none') {
+        more.style.display = 'contents';
+        this.textContent = 'Show less';
+      } else {
+        more.style.display = 'none';
+        this.textContent = 'See all...';
+      }
+    });
+  });
+
+  document.querySelectorAll('.filter-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var type = this.getAttribute('data-type');
+      var val = this.getAttribute('data-val');
+
+      this.parentNode.querySelectorAll('.filter-link').forEach(function(l) { l.style.fontWeight = 'normal'; });
+      this.style.fontWeight = 'bold';
+
+      document.querySelectorAll('.blog-card').forEach(function(card) {
+        if (type === 'all') {
+          card.style.display = '';
+        } else {
+          var data = card.getAttribute('data-' + type) || '';
+          card.style.display = data.indexOf(val) !== -1 ? '' : 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
+
 
     
 <div class="max-w-3xl mx-auto px-4 py-4 mb-2 border border-amber-400 bg-amber-50 rounded-lg text-center">
