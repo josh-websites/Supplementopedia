@@ -4,34 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Supplementopedia Blog – Supplementopedia</title>
+  <title>deficiency - Supplementopedia – Supplementopedia</title>
   
 
-  <meta name="description" content="Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.">
+  <meta name="description" content="Posts tagged deficiency on Supplementopedia.">
   <meta name="author" content="Supplementopedia">
 
   <link rel="icon" href="/images/site/favicon.png" type="image/png">
 
   
-  <link rel="canonical" href="https://supplementopedia.com/blog/" />
+  <link rel="canonical" href="https://supplementopedia.com/articles/tag/deficiency/" />
   
 
-  <meta property="og:title" content="Supplementopedia Blog">
-  <meta property="og:description" content="Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.">
+  <meta property="og:title" content="deficiency - Supplementopedia">
+  <meta property="og:description" content="Posts tagged deficiency on Supplementopedia.">
   
   <meta property="og:type" content="website">
   
-  <meta property="og:image" content="/images/blog/default.webp">
+  <meta property="og:image" content="/images/articles/default.webp">
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Supplementopedia Blog",
-  "description": "Evidence-based supplement guides, ingredient deep dives, and answers to real questions from real people.",
-  "url": "https://supplementopedia.com/blog/"
-}
-  </script>
+  
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style type="text/tailwindcss">
@@ -49,6 +41,7 @@
       .prose-sp tr:hover td { @apply bg-gray-50; }
       .prose-sp strong { @apply text-gray-900; }
       .prose-sp em { @apply text-gray-600; }
+      .prose-sp a em { @apply text-blue-700; }
     }
   </style>
 </head>
@@ -67,14 +60,14 @@
     </button>
     <nav id="menu" class="hidden md:flex space-x-6 text-base">
       <a href="/" class="hover:underline">Home</a>
-      <span class="font-semibold text-black">Blog</span>
+      <a href="/articles/" class="font-semibold text-black hover:underline">Articles</a>
       <a href="/about/" class="hover:underline">About</a>
 
     </nav>
   </div>
   <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-center">
   <a href="/" class="block hover:underline">Home</a>
-  <span class="block font-semibold text-black">Blog</span>
+  <a href="/articles/" class="block font-semibold text-black hover:underline">Articles</a>
   <a href="/about/" class="block hover:underline">About</a>
 
 </div>
@@ -85,85 +78,22 @@
 </div>
 
     <div class="text-center py-3 px-4 mb-5">
-  <h1 class="text-2xl md:text-3xl font-bold m-0">Supplementopedia Blog</h1>
-  <p class="text-gray-600 mt-1">Evidence-based supplement guides, ingredient deep dives, and answers to real questions.</p>
+  <h1 class="text-2xl md:text-3xl font-bold m-0">deficiency</h1>
+  <p class="text-sm mt-1 mb-0 text-gray-500">1 post</p>
 </div>
 
 <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
+<a href="/articles/zinc-induced-copper-deficiency-symptoms-recovery/" class="block border rounded-xl overflow-hidden shadow hover:shadow-lg no-underline hover:no-underline transition text-center p-4">
+      <img src="/images/articles/zinc-induced-copper-deficiency-symptoms-recovery.webp" alt="Zinc-Induced Copper Deficiency: Symptoms, Mechanisms, and Recovery" class="mx-auto rounded-lg" style="max-height: 200px; width: auto;" loading="lazy" />
+      <h3 class="text-base font-bold mt-3 mb-0 text-gray-900">Zinc-Induced Copper Deficiency: Symptoms, Mechanisms, and Recovery</h3>
+      <p class="text-xs mt-1 mb-2 text-gray-500">March 29, 2026</p>
+      <p class="text-sm mt-0 mb-0 text-gray-600">High-dose zinc supplementation depletes copper over time, causing fatigue, grey hair, nerve pain, and anemia. Learn the mechanism, symptoms, dosing ratios, and recovery protocol.</p>
+    </a>
 </div>
 
-<script>
-(function() {
-  var genrePanel = document.getElementById('genre-panel');
-  var tagPanel = document.getElementById('tag-panel');
-  var tabGenres = document.getElementById('tab-genres');
-  var tabTags = document.getElementById('tab-tags');
-
-  function closeAll() {
-    if (genrePanel) genrePanel.style.display = 'none';
-    if (tagPanel) tagPanel.style.display = 'none';
-    if (tabGenres) tabGenres.style.fontWeight = 'normal';
-    if (tabTags) tabTags.style.fontWeight = 'normal';
-  }
-
-  if (tabGenres) {
-    tabGenres.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (genrePanel.style.display !== 'none') { closeAll(); return; }
-      closeAll();
-      genrePanel.style.display = 'flex';
-      tabGenres.style.fontWeight = 'bold';
-    });
-  }
-
-  if (tabTags) {
-    tabTags.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (tagPanel.style.display !== 'none') { closeAll(); return; }
-      closeAll();
-      tagPanel.style.display = 'flex';
-      tabTags.style.fontWeight = 'bold';
-    });
-  }
-
-  document.querySelectorAll('[id$="-seeall"]').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      var moreId = this.id.replace('-seeall', '-more');
-      var more = document.getElementById(moreId);
-      if (more.style.display === 'none') {
-        more.style.display = 'contents';
-        this.textContent = 'Show less';
-      } else {
-        more.style.display = 'none';
-        this.textContent = 'See all...';
-      }
-    });
-  });
-
-  document.querySelectorAll('.filter-link').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      var type = this.getAttribute('data-type');
-      var val = this.getAttribute('data-val');
-
-      this.parentNode.querySelectorAll('.filter-link').forEach(function(l) { l.style.fontWeight = 'normal'; });
-      this.style.fontWeight = 'bold';
-
-      document.querySelectorAll('.blog-card').forEach(function(card) {
-        if (type === 'all') {
-          card.style.display = '';
-        } else {
-          var data = card.getAttribute('data-' + type) || '';
-          card.style.display = data.indexOf(val) !== -1 ? '' : 'none';
-        }
-      });
-    });
-  });
-})();
-</script>
-
+<div class="text-center mt-6">
+  <a href="/articles/" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-500 transition no-underline">All Posts</a>
+</div>
 
     
 <div class="max-w-3xl mx-auto px-4 py-4 mb-2 border border-amber-400 bg-amber-50 rounded-lg text-center">

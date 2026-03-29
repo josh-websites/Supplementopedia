@@ -21,7 +21,7 @@
   
   <meta property="og:type" content="website">
   
-  <meta property="og:image" content="/images/blog/default.webp">
+  <meta property="og:image" content="/images/articles/default.webp">
 
   <script type="application/ld+json">
 {
@@ -49,6 +49,7 @@
       .prose-sp tr:hover td { @apply bg-gray-50; }
       .prose-sp strong { @apply text-gray-900; }
       .prose-sp em { @apply text-gray-600; }
+      .prose-sp a em { @apply text-blue-700; }
     }
   </style>
 </head>
@@ -89,8 +90,30 @@
   <p class="text-gray-600 mt-1">Evidence-based supplement guides, ingredient deep dives, and answers to real questions.</p>
 </div>
 
-<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-
+<div class="text-center mb-4">
+  <a href="#" id="tab-genres" class="filter-tab text-blue-600 underline mx-2">Categories</a>
+  <a href="#" id="tab-tags" class="filter-tab text-blue-600 underline mx-2">Tags</a>
+</div>
+<div id="genre-panel" style="display:none; margin-bottom: 16px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; flex-wrap: wrap; justify-content: center; gap: 8px 20px;">
+  <a href="#" class="filter-link text-blue-600 underline font-bold" data-type="all" data-val="all">All Posts</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="genres" data-val="minerals">Minerals</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="genres" data-val="safety">Safety</a>
+</div>
+<div id="tag-panel" style="display:none; margin-bottom: 16px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 8px; flex-wrap: wrap; justify-content: center; gap: 8px 20px;">
+  <a href="#" class="filter-link text-blue-600 underline font-bold" data-type="all" data-val="all">All Posts</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="tags" data-val="copper">Copper</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="tags" data-val="deficiency">Deficiency</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="tags" data-val="mineral-balance">Mineral Balance</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="tags" data-val="supplementation">Supplementation</a>
+  <a href="#" class="filter-link text-blue-600 underline" data-type="tags" data-val="zinc">Zinc</a>
+</div>
+<div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-10">
+<a href="/articles/zinc-induced-copper-deficiency-symptoms-recovery/" class="blog-card block border rounded-xl overflow-hidden shadow hover:shadow-lg no-underline hover:no-underline transition text-center p-4" data-genres="minerals safety" data-tags="zinc copper deficiency mineral-balance supplementation">
+      <img src="/images/articles/zinc-induced-copper-deficiency-symptoms-recovery.webp" alt="Zinc-Induced Copper Deficiency: Symptoms, Mechanisms, and Recovery" class="mx-auto rounded-lg" style="max-height: 200px; width: auto;" loading="lazy" />
+      <h3 class="text-base font-bold mt-3 mb-0 text-gray-900">Zinc-Induced Copper Deficiency: Symptoms, Mechanisms, and Recovery</h3>
+      <p class="text-xs mt-1 mb-2 text-gray-500">March 29, 2026</p>
+      <p class="text-sm mt-0 mb-0 text-gray-600">High-dose zinc supplementation depletes copper over time, causing fatigue, grey hair, nerve pain, and anemia. Learn the mechanism, symptoms, dosing ratios, and recovery protocol.</p>
+    </a>
 </div>
 
 <script>
