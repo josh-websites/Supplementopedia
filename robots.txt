@@ -5,7 +5,6 @@ Allow: /
 
 # Blog content
 Allow: /articles/
-Allow: /articles/tag/
 
 # Block non-content paths
 Disallow: /.git/
